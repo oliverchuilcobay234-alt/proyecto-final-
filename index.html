@@ -1,0 +1,277 @@
+﻿<html>
+<head>
+
+<title>Animales</title>
+
+<style>
+
+body{
+font-family: Arial;
+background:#FFFFD0;
+margin:0;
+}
+
+h1{
+text-align:center;
+background:#000000;
+color:white;
+padding:10px;
+}
+
+
+/*INTEGEANTES*/
+.titulo-autores{
+text-align:center;
+font-family:Brush Script MT;
+font-size:50px;
+}
+
+.autores{
+text-align:center;
+font-size:30px;
+font-weight:bold;
+max-width:1200px;
+margin:auto;
+line-height:1.4;
+font-family:Arial;
+}
+
+
+
+/* MENU */
+
+.menu{
+background:#000000;
+position:relative;
+z-index:1000;
+}
+
+.menu ul{
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+justify-content:center;
+}
+
+.menu li{
+position:relative;
+}
+
+.menu a{
+display:block;
+padding:20px;
+color:white;
+text-decoration:none;
+}
+
+.menu a:hover{
+background:#1C1C1C;
+}
+
+/* SUBMENU */
+
+.menu li ul{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+background:#1C1C1C;
+min-width:160px;
+z-index:1000;
+}
+
+.menu li ul li{
+width:100%;
+}
+
+.menu li:hover ul{
+display:block;
+}
+
+/* GALERIA */
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px;
+padding:20px;
+position:relative;
+z-index:1;
+}
+
+/* CONTENEDOR DE IMAGEN */
+
+.imagen{
+position:relative;
+overflow:hidden;
+border-radius:10px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.4);
+}
+
+/* IMAGEN */
+
+.imagen img{
+width:100%;
+display:block;
+transition:0.6s;
+}
+
+/* EFECTO ZOOM */
+
+.imagen:hover img{
+transform:scale(1.1);
+}
+
+/* TEXTO SOBRE IMAGEN */
+
+.texto{
+position:absolute;
+bottom:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+color:white;
+text-align:center;
+padding:30px;
+font-size:30px;
+opacity:0;
+transition:0.8s;
+font-family: "papyrus", sans-serif;
+}
+
+/* APARECE EL TEXTO */
+
+.imagen:hover .texto{
+opacity:1;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>ANIMALES</h1>
+
+<nav class="menu">
+
+<ul>
+<li><a href="index.html">Inicio</a></li>
+
+<li><a href="#">Peces</a>
+<ul>
+<li><a href="https://europe.oceana.org/es/que-hacemos-fauna-y-flora-marina-tiburones-mas-informacion-sobre-los-tiburones/">Tiburón</a></li>
+<li><a href="https://www.pescaderiascorunesas.es/pescados/salmon">Salmón</a></li>
+<li><a href="https://www.fishipedia.es/pez/amphiprion-ocellaris">Pez payaso</a></li>
+<li><a href="https://www.britannica.com/animal/tuna-fish">Atún</a></li>
+<li><a href="https://www.pescaderiascorunesas.es/pescados/pez-espada">Pez espada</a></li>
+</ul>
+</li>
+
+<li><a href="#">Mamíferos</a>
+<ul>
+<li><a href="tigres.html">Tigre</a></li>
+<li><a href="Elefantes.html">Elefante</a></li>
+<li><a href="Oso.html">Oso Polar</a></li>
+<li><a href="Caballos.html">Caballo</a></li>
+<li><a href="Murciélagos.html">Murciélago</a></li>
+</ul>
+</li>
+
+<li><a href="anfibios.html">Anfibios</a>
+<ul>
+
+</ul>
+</li>
+
+<li><a href="#">Aves</a>
+<ul>
+<li><a href="https://www.britannica.com/animal/eagle-bird">Águila</a></li>
+<li><a href="https://hummingworlds.com/es/#google_vignette">Colibrí</a></li>
+<li><a href="https://www.britannica.com/animal/parrot">Loro</a></li>
+<li><a href="https://www.nationalgeographicla.com/animales/pinguinos">Pingüino</a></li>
+<li><a href="https://www.owlresearchinstitute.org/owls-1">Búho</a></li>
+</ul>
+</li>
+
+<li><a href="#">Reptiles</a>
+<ul>
+<li><a href="boa constrictora.html">Boa constrictora</a></li>
+<li><a href="cocodrilo.html">Cocodrilo</a></li>
+<li><a href="tortuga.html">Tortuga</a></li>
+<li><a href="dragon.html">Dragon de Komodo</a></li>
+<li><a href="camaleon.html">Camaleón</a></li>
+</ul>
+</li>
+
+</ul>
+</nav>
+
+<div class="galeria">
+
+<div class="imagen">
+<img src="sapo.png">
+<div class="texto">Sapo</div>
+</div>
+
+<div class="imagen">
+<img src="ajolote.png">
+<div class="texto">Ajolote</div>
+</div>
+
+<div class="imagen">
+<img src="salamandra.png">
+<div class="texto">Salamandra</div>
+</div>
+
+<div class="imagen">
+<img src="cecilias.png">
+<div class="texto">Cecilias</div>
+</div>
+
+<div class="imagen">
+<img src="caballo.jpg">
+<div class="texto">Caballo</div>
+</div>
+
+<div class="imagen">
+<img src="elefante.jpg">
+<div class="texto">Elefante</div>
+</div>
+
+
+
+<div class="imagen">
+<img src="coco.png">
+<div class="texto">Cocodrilo de estuario</div>
+</div>
+
+<div class="imagen">
+<img src="tortu.png">
+<div class="texto">Tortuga Galapagos</div>
+</div>
+
+
+<div class="imagen">
+<img src="Boa constrictora.png">
+<div class="texto">Boa constrictora</div>
+</div>
+
+
+</div>
+<h2 class="titulo-autores">AUTORES</h2>
+
+<div class="autores">
+<p>PERAZA XOOL JULIO VLADIMIR</p>
+<p>CHI GARCIA JAFET ALDHAIR</p>
+<p>CHUIL ORDOÑEZ OLIVER ISAAC</p>
+<p>GONZALES MARTIN MIGUEL JARETH</p>
+<p>TUN KOYOC URIEL EZEQUIEL</p>
+</div>
+
+
+
+</h3>
+
+</body>
+</html>
